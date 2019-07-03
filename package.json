@@ -1,14 +1,12 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.4",
     "main": "index.js",
-    "author": "will@wasd.team",
     "module": "index.js",
-    "name": "@overgear/yup-ast",
+    "name": "@strive-labs/yup-ast",
     "description": "Yup AST generator",
-    "repository": "git@github.com:WASD-Team/yup-ast.git",
     "scripts": {
         "develop": "./develop.sh",
-        "build": "NODE_ENV=production webpack --progress --config webpack.config.js; yarn version; cp package.json dist",
+        "build": "webpack --progress --config webpack.config.js; yarn version; cp package.json dist",
         "build:dev:once": "NODE_ENV=development webpack --progress --config webpack.config.js",
         "build:dev": "NODE_ENV=development webpack -w --progress --config webpack.config.js",
         "test": "cross-env NODE_ENV=test jest --coverage",
