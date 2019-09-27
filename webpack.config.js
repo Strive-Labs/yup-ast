@@ -5,10 +5,11 @@ function resolve(newPath) {
     return path.resolve(__dirname, newPath);
 }
 
-const { NODE_ENV = 'production' } = process.env;
+// const { NODE_ENV = 'production' } = process.env;
 
 module.exports = {
-    mode: NODE_ENV,
+    mode: 'development',
+    devtool: 'cheap-source-map',
     entry: './source/index.js',
     output: {
         path: resolve('dist'),
